@@ -7,18 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F5F920528D1B0E1001C08A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5F920428D1B0E1001C08A3 /* SceneDelegate.swift */; };
+		5F5F920B28D1B25B001C08A3 /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F5F920728D1B231001C08A3 /* App.xcframework */; };
+		5F5F920C28D1B25B001C08A3 /* App.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5F5F920728D1B231001C08A3 /* App.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5F5F920D28D1B25C001C08A3 /* Flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F5F920828D1B231001C08A3 /* Flutter.xcframework */; };
+		5F5F920E28D1B25C001C08A3 /* Flutter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5F5F920828D1B231001C08A3 /* Flutter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5F87BC7228CF15A700971AFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F87BC7128CF15A700971AFE /* AppDelegate.swift */; };
-		5F87BC7428CF15A700971AFE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F87BC7328CF15A700971AFE /* SceneDelegate.swift */; };
 		5F87BC7628CF15A700971AFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F87BC7528CF15A700971AFE /* ViewController.swift */; };
 		5F87BC7928CF15A700971AFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F87BC7728CF15A700971AFE /* Main.storyboard */; };
 		5F87BC7B28CF15AA00971AFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F87BC7A28CF15AA00971AFE /* Assets.xcassets */; };
 		5F87BC7E28CF15AA00971AFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F87BC7C28CF15AA00971AFE /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5F87BC9628D05D4000971AFE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5F5F920E28D1B25C001C08A3 /* Flutter.xcframework in Embed Frameworks */,
+				5F5F920C28D1B25B001C08A3 /* App.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		5F5F920428D1B0E1001C08A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5F5F920728D1B231001C08A3 /* App.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = App.xcframework; sourceTree = "<group>"; };
+		5F5F920828D1B231001C08A3 /* Flutter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Flutter.xcframework; sourceTree = "<group>"; };
 		5F87BC6E28CF15A700971AFE /* FlutterToiOSNativeAppEx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlutterToiOSNativeAppEx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F87BC7128CF15A700971AFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5F87BC7328CF15A700971AFE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5F87BC7528CF15A700971AFE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5F87BC7828CF15A700971AFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5F87BC7A28CF15AA00971AFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -31,15 +52,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F5F920D28D1B25C001C08A3 /* Flutter.xcframework in Frameworks */,
+				5F5F920B28D1B25B001C08A3 /* App.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F5F920628D1B231001C08A3 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				5F5F920728D1B231001C08A3 /* App.xcframework */,
+				5F5F920828D1B231001C08A3 /* Flutter.xcframework */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
 		5F87BC6528CF15A700971AFE = {
 			isa = PBXGroup;
 			children = (
+				5F5F920628D1B231001C08A3 /* Debug */,
 				5F87BC7028CF15A700971AFE /* FlutterToiOSNativeAppEx */,
 				5F87BC6F28CF15A700971AFE /* Products */,
 			);
@@ -57,7 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				5F87BC7128CF15A700971AFE /* AppDelegate.swift */,
-				5F87BC7328CF15A700971AFE /* SceneDelegate.swift */,
+				5F5F920428D1B0E1001C08A3 /* SceneDelegate.swift */,
 				5F87BC7528CF15A700971AFE /* ViewController.swift */,
 				5F87BC7728CF15A700971AFE /* Main.storyboard */,
 				5F87BC7A28CF15AA00971AFE /* Assets.xcassets */,
@@ -77,6 +110,7 @@
 				5F87BC6A28CF15A700971AFE /* Sources */,
 				5F87BC6B28CF15A700971AFE /* Frameworks */,
 				5F87BC6C28CF15A700971AFE /* Resources */,
+				5F87BC9628D05D4000971AFE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,7 +174,7 @@
 			files = (
 				5F87BC7628CF15A700971AFE /* ViewController.swift in Sources */,
 				5F87BC7228CF15A700971AFE /* AppDelegate.swift in Sources */,
-				5F87BC7428CF15A700971AFE /* SceneDelegate.swift in Sources */,
+				5F5F920528D1B0E1001C08A3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +322,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N8562Q559W;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/Debug\"";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FlutterToiOSNativeAppEx/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -300,7 +335,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.fluttertoios.FlutterToiOSNativeAppEx;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.fluttertoios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -316,6 +351,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N8562Q559W;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/Debug\"";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FlutterToiOSNativeAppEx/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -328,7 +364,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.fluttertoios.FlutterToiOSNativeAppEx;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.fluttertoios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

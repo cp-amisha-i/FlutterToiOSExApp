@@ -21,7 +21,7 @@
                                 <color key="backgroundColor" systemColor="systemMintColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="7Mo-sL-vvR"/>
-                                    <constraint firstAttribute="width" constant="100" id="lE3-Jj-pBt"/>
+                                    <constraint firstAttribute="width" constant="120" id="lE3-Jj-pBt"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -34,12 +34,15 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ukK-TX-SAq" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="pjs-m0-gbU"/>
                             <constraint firstItem="ukK-TX-SAq" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="uxJ-x2-i4E"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginButton" destination="ukK-TX-SAq" id="2zL-Yf-1Uq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -47,9 +50,6 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemMintColor">
             <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

@@ -10,8 +10,11 @@ import Flutter
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var loginButton: UIButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        loginButton.layer.cornerRadius = loginButton.frame.height / 2
     }
 
     @IBAction func onLoginBtnClick(_ sender: UIButton) {

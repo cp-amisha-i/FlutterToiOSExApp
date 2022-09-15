@@ -8,10 +8,10 @@
 import UIKit
 import Flutter
 
-@main
+@UIApplicationMain
 class AppDelegate: FlutterAppDelegate {
 
-    let flutterEngine = FlutterEngine(name: "my engine")
+    let flutterEngine = FlutterEngine(name: "my flutter engine")
 
     override func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         flutterEngine.run(withEntrypoint: "nativeLoad", libraryURI: "package:flutter_lib/main.dart")
